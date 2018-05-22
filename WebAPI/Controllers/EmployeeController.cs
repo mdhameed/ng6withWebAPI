@@ -74,11 +74,6 @@ namespace WebAPI.Controllers
         [ResponseType(typeof(Employee))]
         public IHttpActionResult PostEmployee(Employee employee)
         {
-            //if (!ModelState.IsValid)
-            //{
-            //    return BadRequest(ModelState);
-            //}
-
             db.Employees.Add(employee);
             db.SaveChanges();
 
