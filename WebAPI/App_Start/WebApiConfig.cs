@@ -22,7 +22,6 @@ namespace WebAPI
             );
 
             config.EnableCors(new EnableCorsAttribute("http://localhost:4200", headers: "*", methods: "*"));
-            config.EnableCors(new EnableCorsAttribute("http://localhost", headers: "*", methods: "*"));
         }
     }
 }
