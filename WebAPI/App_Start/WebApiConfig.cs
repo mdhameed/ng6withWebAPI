@@ -21,7 +21,8 @@ namespace WebAPI
                 defaults: new { id = RouteParameter.Optional }
             );
 
-            config.EnableCors(new EnableCorsAttribute("http://localhost:4200", headers: "*", methods: "*"));
+            //config.EnableCors(new EnableCorsAttribute("http://localhost:4200", headers: "*", methods: "*"));
+            config.EnableCors(new EnableCorsAttribute("http://possibleworks.com", headers: "*", methods: "*"));
         }
     }
 }
